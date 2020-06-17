@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+/* NAVIGATION */
+
+.navigation {
+  max-width: 80%;
+  margin: auto;
+}
+
+.row {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  display: inline;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  border-bottom: 1px solid white;
+  padding: 0px 15px;
+}
+
+.navigation .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation .row .logos a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+}
+
+.navigation .row .menu ul {
+  padding: 15px;
+  margin: 5px 0px;
+}
+
+.navigation .row .menu ul li {
+  display: inline-block;
+  margin: 0px 20px;
+}
+
+.navigation .row .menu ul li a {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.navigation .row .menu ul li a:hover {
+  border: 1px solid yellowgreen;
+  height: 0px;
+  color: #00a2c6;
+  font-weight: bold;
+}
+
+/* MAIN */
+main {
+  overflow: auto;
+}
+
+/* Home */
+
+.home {
+  min-height: 100vh;
+  background-image: url("/assets/img/1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home .container {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 11%;
+}
+
+.home .kabSmg img {
+  height: 30vh;
+}
+
+.home .text {
+  margin-left: 5%;
+}
+
+.home .content h1 {
+  color: white;
+  font-size: 3.5em;
+}
+
+.home .content h3 {
+  color: white;
+  font-size: 2em;
+  text-align: left;
+}
+
+.home a {
+  text-decoration: none;
+  color: white;
+}
+
+/* CONTENT */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Border Img dan Caption */
+figure {
+  border: thin wheat solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  margin: auto;
+}
+
+figcaption {
+  background-color: black;
+  color: white;
+  font: italic smaller "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+#content p {
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+#content #sejarah,
+#perangkat h2 {
+  text-align: center;
+}
+
+/* IMAGE */
+
+#content img {
+  width: 100%;
+}
+
+#content #visimisi h2 {
+  text-align: center;
+}
+
+#content #wilayah h2 {
+  text-align: center;
+}
+
+/* ASIDE */
+#content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+aside a {
+  text-decoration: none;
+  color: black;
+}
+
+aside .card {
+  flex: auto;
+  align-items: center;
+}
+
+aside table .th {
+  align-items: right;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer .pb p {
+  font-size: 25px;
+}
+
+footer img {
+  width: 80px;
+}
+
+/* Media Screen TAB */
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 0px 7.5px;
+  }
+
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  .navigation .row .menu ul li a {
+    border: 2px solid white;
+    border-radius: 2.5px;
+    padding: 5px;
+    font-size: 11px;
+    font-weight: 300;
+  }
+
+  .home .text {
+    margin-left: 2%;
+  }
+
+  .home .kabSmg img {
+    height: 15vh;
+  }
+
+  .home .content h1 {
+    font-size: 3em;
+  }
+
+  .home .content h3 {
+    font-size: 1.5em;
+  }
+}
+
+/* Media Screen Phone */
+@media screen and (max-width: 500px) {
+  header {
+    padding: 0px 7.5px;
+  }
+
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+
+  .navigation .row .menu ul li a {
+    border: 0.5px solid white;
+    border-radius: 2.5px;
+    padding: 2.5px;
+    font-size: 9px;
+    font-weight: 300;
+  }
+
+  .home .container {
+    padding-top: 75%;
+    display: block;
+  }
+  .home .kabSmg img {
+    height: 15vh;
+  }
+
+  .home .text {
+    margin-left: 0%;
+  }
+
+  .home .text h1 {
+    font-size: 1.5em;
+  }
+
+  .home .text h3 {
+    font-size: 0.8em;
+  }
+
+  .home .Mail {
+    width: 15px;
+  }
+  .home .Call {
+    width: 12px;
+  }
+
+  .home a {
+    display: inline-block;
+    font-size: 0.8em;
+  }
+}
